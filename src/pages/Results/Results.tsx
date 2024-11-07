@@ -37,7 +37,7 @@ export const Results = () => {
 						onClick={startNewGame}
 						className="text-2xl mt-4 mr-10 font-semibold"
 					>
-						Do you wanna play again?
+						Do you wanna play again? Click here!
 					</button>
 				</div>
 				<div
