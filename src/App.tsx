@@ -1,10 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { Quiz } from "./pages/Quiz/Quiz";
+import { Home } from "./pages/Home/Home";
+import { Results } from "./pages/Results/Results";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Happy coding and good luck! 🌟
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/results" element={<Results />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
